@@ -1,0 +1,82 @@
+ERROR - 2024-05-16 04:50:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `clientes`
+GROUP BY `nombre`' at line 1 in C:\xampp\htdocs\APIRestaurante\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\APIRestaurante\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `nombre`...', 0)
+#1 C:\xampp\htdocs\APIRestaurante\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nombre`...')
+#2 C:\xampp\htdocs\APIRestaurante\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nombre`...')
+#3 C:\xampp\htdocs\APIRestaurante\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `nombre`...', Array, false)
+#4 C:\xampp\htdocs\APIRestaurante\app\Models\ClientesModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\APIRestaurante\app\Controllers\Cliente.php(19): App\Models\ClientesModel->getClientes()
+#6 C:\xampp\htdocs\APIRestaurante\system\CodeIgniter.php(919): App\Controllers\Cliente->getClientes()
+#7 C:\xampp\htdocs\APIRestaurante\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#8 C:\xampp\htdocs\APIRestaurante\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\APIRestaurante\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\APIRestaurante\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-05-16 04:50:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `clientes`
+GROUP BY `nombre`' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `nombre`, *
+FROM `clientes`
+GROUP BY `nombre`', [], false)
+ 2 APPPATH\Models\ClientesModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Cliente.php(19): App\Models\ClientesModel->getClientes()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Cliente->getClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIRestaurante\\public\\index.php')
+CRITICAL - 2024-05-16 15:47:15 --> Undefined array key "nombre"
+in APPPATH\Controllers\Cliente.php on line 85.
+ 1 APPPATH\Controllers\Cliente.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\APIRestaurante\\app\\Controllers\\Cliente.php', 85)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Cliente->insertCliente()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIRestaurante\\public\\index.php')
+CRITICAL - 2024-05-16 17:34:14 --> Undefined array key "nombre"
+in APPPATH\Controllers\Cliente.php on line 85.
+ 1 APPPATH\Controllers\Cliente.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\APIRestaurante\\app\\Controllers\\Cliente.php', 85)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Cliente->insertCliente()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIRestaurante\\public\\index.php')
+CRITICAL - 2024-05-16 17:41:14 --> Undefined array key "nombre"
+in APPPATH\Controllers\Cliente.php on line 85.
+ 1 APPPATH\Controllers\Cliente.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\APIRestaurante\\app\\Controllers\\Cliente.php', 85)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Cliente->insertCliente()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIRestaurante\\public\\index.php')
+CRITICAL - 2024-05-16 17:43:34 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 1724.
+ 1 SYSTEMPATH\BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray([], 'insert')
+ 3 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], true)
+ 4 APPPATH\Models\ClientesModel.php(68): CodeIgniter\Model->insert([])
+ 5 APPPATH\Controllers\Cliente.php(104): App\Models\ClientesModel->insertCliente([])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Cliente->insertCliente()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIRestaurante\\public\\index.php')
+CRITICAL - 2024-05-16 17:45:08 --> Undefined array key "nombre"
+in APPPATH\Controllers\Cliente.php on line 85.
+ 1 APPPATH\Controllers\Cliente.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\APIRestaurante\\app\\Controllers\\Cliente.php', 85)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Cliente->insertCliente()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIRestaurante\\public\\index.php')
+CRITICAL - 2024-05-16 17:45:32 --> Undefined array key "nombre"
+in APPPATH\Controllers\Cliente.php on line 85.
+ 1 APPPATH\Controllers\Cliente.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\APIRestaurante\\app\\Controllers\\Cliente.php', 85)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Cliente->insertCliente()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIRestaurante\\public\\index.php')

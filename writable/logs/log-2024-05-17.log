@@ -1,0 +1,26 @@
+CRITICAL - 2024-05-17 15:31:02 --> Undefined array key "nombre"
+in APPPATH\Controllers\Cliente.php on line 88.
+ 1 APPPATH\Controllers\Cliente.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\APIRestaurante\\app\\Controllers\\Cliente.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Cliente->insertCliente()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIRestaurante\\public\\index.php')
+CRITICAL - 2024-05-17 15:36:33 --> Undefined array key "nombre"
+in APPPATH\Controllers\Cliente.php on line 88.
+ 1 APPPATH\Controllers\Cliente.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\APIRestaurante\\app\\Controllers\\Cliente.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Cliente->insertCliente()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIRestaurante\\public\\index.php')
+CRITICAL - 2024-05-17 16:09:00 --> Invalid file: "clientes/agregarDato.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clientes/agregarDato.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('clientes/agregarDato', [], true)
+ 3 APPPATH\Controllers\Cliente.php(107): view('clientes/agregarDato')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Cliente->insertCliente()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIRestaurante\\public\\index.php')

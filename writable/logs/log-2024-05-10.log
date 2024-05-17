@@ -1,0 +1,16 @@
+CRITICAL - 2024-05-10 17:48:40 --> Too few arguments to function App\Models\ClientesModel::getClienteByNombre(), 0 passed in C:\xampp\htdocs\APIRestaurante\app\Controllers\Cliente.php on line 41 and exactly 1 expected
+in APPPATH\Models\ClientesModel.php on line 56.
+ 1 APPPATH\Controllers\Cliente.php(41): App\Models\ClientesModel->getClienteByNombre()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Cliente->getClienteByNombre()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIRestaurante\\public\\index.php')
+CRITICAL - 2024-05-10 18:05:53 --> Call to undefined method App\Models\ClientesModel::getClienteByPreferencias
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Cliente.php(74): CodeIgniter\Model->__call('getClienteByPreferencias', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Cliente->getClienteByPreferencias()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\APIRestaurante\\public\\index.php')
